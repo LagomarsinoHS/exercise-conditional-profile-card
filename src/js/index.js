@@ -38,28 +38,17 @@ function render(variables = {}) {
   if (variables.instagram == null) variables.instagram = "alesanchezr";
 
   /* --- Modificacion del campo Role --- */
-  if (variables.role == null || variables.role == "Web Developer") {
-    variables.role = "Web Developer";
-  }
+  if (variables.role == null) variables.role = "Web Developer";
+
   /* --- Modificacion del campo City --- */
 
-  if (variables.city == null || variables.city == "Miami") {
-    variables.city = "Miami";
-  }
+  if (variables.city == null) variables.city = "Miami";
 
   /* --- Modificacion del campo Contry --- */
   switch (variables.country) {
     case null:
       variables.country = "USA";
       break;
-  }
-
-  if (variables.role == null || variables.role == "Web Developer") {
-    variables.role = "Web Developer";
-  } else if (variables.role == "Floor Planner") {
-    variables.role = "Floor Planner";
-  } else {
-    variables.role = "Technical Writter";
   }
 
   variables.name == "Luci"
